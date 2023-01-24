@@ -78,3 +78,7 @@ In our code demo today we'll do the following:
 ### CSS Cheatsheet
 
 - [css everything cheatsheet](https://overapi.com/css){:target="_blank"}
+
+### Resources
+
+- [Replit: Playing with Data Types](https://replit.com/@sheyna/ShabbyDecimalTrapezoids#index.js)
