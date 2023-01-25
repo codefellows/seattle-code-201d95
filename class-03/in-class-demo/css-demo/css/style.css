@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+/*
+  css comment
+*/
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: crimson;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 6rem;
+}
+
+.picture {
+  width: 400px;
+  padding: 30px;
+  border: 10px solid red;
+  background-color: darkseagreen;
+}
+
+div {
+  border: 1px solid black;
+  padding: 25px;
+  margin: 2%;
+
+  /* float: right; */
+  display: inline-block;
+  width: 28%;
+
+}
+
+span {
+  color: red;
+}
+
+p {
+  clear: both;
+}
+
+/* CSS class */
+.parent {
+  width: 600px;
+  background-color: blanchedalmond;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CSS id */
+div#box3 {
+  color: crimson;
+}
+
+/* CSS pseudo selectors */
+div:hover {
+  background-color: aquamarine;
+}
+
+h2:first-child {
+  background-color: coral;
+}
+
+div:first-of-type {
+  background-color: darkseagreen;
+}
+
+div:nth-of-type(3) {
+  background-color: darkviolet;
+}
