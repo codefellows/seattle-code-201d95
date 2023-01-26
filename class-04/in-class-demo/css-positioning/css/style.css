@@ -1,0 +1,56 @@
+
+/*
+CSS POSITIONING
+- positioned in relationship to another HTML element on the page
+- or is positioned in relationship to the browser window
+- does the element move as we scroll down the page or does stay put
+
+Static - the default value
+
+Relative — relative to its original positon
+
+Aboslute - in relation to it's most recent ancestor element with postioning applied to it (not static), if no ancestor has positoing then the Absolute element will display in relation to the browser window
+
+fixed -
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 2rem;
+  margin: 1rem
+}
+h2 {
+  font-weight: bold;
+}
+section  {
+  border: medium solid red;
+  margin: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+div {
+  border: medium solid black;
+  margin: 1rem;
+  padding: 1rem;
+  position: absolute;
+  /* left: 500px; */
+}
+
+div#one {
+  left: 300px;
+  top: 200px;
+}
+
+div#two {
+  bottom: 20px;
+}
+
+div#three {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+}
