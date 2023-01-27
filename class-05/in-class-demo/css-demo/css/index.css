@@ -1,0 +1,54 @@
+
+div, span {
+  border: 1px solid gray;
+}
+h1 {
+  font-size: 2rem;
+}
+
+
+div.car {
+  border-color: green;
+}
+
+.car {
+  border: 2px solid red;
+}
+
+
+div span {
+  background-color: orange;
+}
+
+div > span {
+  background-color: pink;
+}
+
+
+section ~ span {
+  /* ~ any span that is a sibling of section  */
+  background-color: magenta;
+}
+
+section + span {
+  /* + a span that is an adjacent sibling of section*/
+  background-color: green;
+}
+
+/* pseudo elements */
+ul::after {
+  content: 'ul::after';
+}
+
+ul::before {
+  content: 'ul::before';
+}
+
+/* pseudo classes */
+li:hover {
+  background-color: antiquewhite;
+}
+
+li:nth-child(2) {
+  color: red;
+}

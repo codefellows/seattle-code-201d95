@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 1rem
+}
+h2 {
+  font-weight: bold;
+}
+
+section, article {
+  border: 2px solid red;
+
+  /* border-width: 15px 1px 50px 5px; */
+
+  /*   2 values will do
+  top/bottom    left/right
+  */
+  /* border-width: 5px 50px; */
+
+  /*  border-style: solid; */
+  /* border-color: red; */
+
+
+  width: 80%;
+
+  /* margin: auto;
+  margin-top: 5rem; */
+
+  /* clockwise starting at the top */
+  /* top, right, bottom, left */
+  margin: 5rem auto auto auto;
+  /* overflow: auto; */
+}
+
+div:nth-child(2) {
+  border-color: green;
+}
+
+div {
+  border: medium solid black;
+  margin: 1rem;
+  padding: 1rem;
+  /* float: left; */
+  display: inline-block;
+  width: 24%;
+}
+
+/* .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
