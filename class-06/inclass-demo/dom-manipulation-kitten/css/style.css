@@ -13,11 +13,9 @@ body {
 
 h1 {
   font-size: 3rem;
-  /*font-style: italic;*/
   padding: 1rem;
   color:  rgb(112, 159, 165);
   border-bottom: 10px double rgb(112, 159, 165);
-  font-family: 'Special Elite', cursive;
 }
 
 main {
@@ -42,7 +40,6 @@ h3 {
   color: rgb(112, 159, 165);
   font-size: 2rem;
   margin-bottom: 1rem;
-  font-family: 'Special Elite', cursive;
 }
 
 ul {
