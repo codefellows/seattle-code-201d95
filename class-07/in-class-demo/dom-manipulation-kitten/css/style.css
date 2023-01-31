@@ -59,3 +59,20 @@ footer {
 a {
   color: rgb(112, 159, 165);
 }
+
+/* Table styles */
+table, td, th {
+  border: 1px solid rgb(112, 159, 165);
+}
+table {
+  margin: 1rem;
+}
+td, th {
+  padding: 1rem;
+}
+th {
+  font-weight: bold;
+}
+tfoot {
+  background-color: rgba(112, 159, 165, .1);
+}
