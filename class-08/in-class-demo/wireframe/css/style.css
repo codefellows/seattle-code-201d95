@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: lightcyan;
+}
+h3 {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main {
+  background-color: bisque;
+  width: 960px;
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+footer {
+  background-color: coral;
+  height: 50px;
+}
+
+main img {
+  margin-bottom: 30px;
+}
+
+article {
+  width: 450px;
+}
+
+article section {
+  height: 320px;
+  overflow: auto;
+}

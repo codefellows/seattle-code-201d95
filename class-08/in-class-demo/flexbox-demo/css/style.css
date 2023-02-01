@@ -1,9 +1,24 @@
 .container {
   border: 1px solid black;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
 }
 
 .container div {
   background-color: lightgray;
   margin: .5rem;
   border: 1px solid black;
+ /* display: inline-block; */
+  width: 15%;
+  /*  We can also make our flex item a flex container and affect its children (the text) */
+  /* if we want to vertically center type, we need flex */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*  text-align only applies to the text itself
+  centering left and right. It does not vertially center */
+  text-align: center;
 }
