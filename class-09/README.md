@@ -43,3 +43,7 @@ In this class you will be learn JavaScript Events and how they can bring interac
 1. An `<input>` element can be displayed in many ways, depending on the `_______` attribute.
 
 1. What does `event.preventDefault()` do?
+
+## Resources
+
+- [Replit: Callback Functions](https://replit.com/@sheyna/PalatableIrritatingAbstracttype#index.js);
