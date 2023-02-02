@@ -97,71 +97,43 @@ let frankie = new Kitten(
   'Frankie is available for adoption'
 );
 
+// invoke their methods to render them to the DOM
 let kittenArray = [jumper, frankie, serena];
 frankie.render();
 jumper.render();
 serena.render();
 
 
-// invoke their methods to render them to the DOM
+// GET DATA FROM A FORM
 
+// 1 - Get element from the dom
+let kittenForm = document.querySelector('form');
 
+// 3 - Define our event handler
 
+let handleSubmit = function(event) {
+  event.preventDefault();
+  // event.target.<name on your HTML input>.value
+  console.log(`hello ${event.target.kittenName.value}`);
+  let kittenName = event.target.kittenName.value;
+  let ageInMonths = parseInt(event.target.ageInMonths.value);
+  let aboutKitten = event.target.aboutKitten.value;
+  let imageURL = event.target.imageURL.value;
+  let imageAlt = event.target.imageAlt.value;
 
+  console.log(typeof ageInMonths);
 
-
-
-
-// we want to store kitten data in a JS object
-
-/*
-let jumper = {
-  name: 'Jumper',
-  likes: ['catnip', 'food', 'string'],
-  renderList: function () {
-    // '6am: 16 cookies'
-    let ul = document.createElement('ul');
-
-    // li.textContent = `6am: ${seattle.someValueInArray[i]}`;
-    for (let i = 0; i < this.likes.length; i++) {
-      let li = document.createElement('li');
-      li.textContent = this.likes[i];
-      ul.appendChild(li);
-    }
-    kittenArticle.appendChild(ul);
-  }
+  let favorites = [
+    event.target.fav1.value,
+    event.target.fav2.value,
+    event.target.fav3.value
+  ]
+  // let's create an instance of Kitten using the information from the form
+  // Kitten(name, arrayOfLikes, about, photoURL, photoAlt)
+  let newKitten = new Kitten(kittenName, favorites, aboutKitten, imageURL, imageAlt);
+  kittenArray.push(newKitten);
+  newKitten.render();
 }
 
-// we want to render that data onto our HTML using JS
-
-// 3 steps to render to the DOM
-// - 1. create an element
-// declare a varialbe and then call createElement and pass the html tag name as a string to createElement
-let kittenArticle = document.createElement('article');
-
-// - 2. give it content
-
-// - 3. append it to the DOM
-// parent element in the DOM to append this new element to. Pass appendChild() the new element by its variable name
-// kittenArticle is the variable name of the DOM element we created
-profileContainer.appendChild(kittenArticle);
-
-
-// h3
-let kittenH3 = document.createElement('h3');
-kittenH3.textContent = 'Jumper';
-kittenArticle.appendChild(kittenH3);
-
-// p
-let p = document.createElement('p');
-p.textContent = 'Jumper the cat is wonderful!';
-kittenArticle.appendChild(p)
-
-// img
-let img = document.createElement('img');
-img.src = 'images/jumper.jpeg';
-img.alt = 'Jumper is very cute here.'
-kittenArticle.appendChild(img);
-
-jumper.renderList();
-*/
+// 2 - Add the event listener
+kittenForm.addEventListener('submit', handleSubmit);

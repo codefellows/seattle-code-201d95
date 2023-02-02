@@ -33,7 +33,47 @@
       </table>
     </section>
     <aside>
+      <form id="form">
+        <!-- Kitten(name, arrayOfLikes, about, photoURL, photoAlt) -->
+        <fieldset>
+          <legend>Kitten Info</legend>
+          <!-- the "for" on the label has to match the "id" of the input
+        in order for screenreaders to acces the information -->
+          <label for="nameOfKitten">Kitten's Name:</label>
+          <input type="text" placeholder="ex. Socks" id="nameOfKitten" name="kittenName" required>
 
+          <!-- this wokrs with screenreaders by wrapping the lable around the input. We don't need the for or id here -->
+          <label>Number of Months Old:
+            <input type="number" name="ageInMonths">
+          </label>
+
+          <label>About Kitten:
+            <textarea name="aboutKitten"></textarea>
+          </label>
+
+          <label>Photo URL:
+            <input type="url" name="imageURL">
+          </label>
+
+          <label>About Photo:
+            <input type="text" name="imageAlt">
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Kitten's Favorite Things</legend>
+          <label>1st Favorite:
+            <input type="text" name="fav1">
+          </label>
+          <label>2nd favorite:
+            <input type="text" name="fav2">
+          </label>
+          <label>3rd favorite:
+            <input type="text" name="fav3">
+          </label>
+        </fieldset>
+        <button type="submit">Add Kitten</button>
+      </form>
     </aside>
   </main>
   <footer>
