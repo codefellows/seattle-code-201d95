@@ -68,3 +68,7 @@ Learning how to **debug** your code will help you to better identify the errors 
 1. Check "Enable Show Develop menu in menu bar".
 
 1. From the Develop menu, select "Show Web Inspector".
+
+## Resources
+
+- [Font Awesome Icon Font](https://fontawesome.com/)
