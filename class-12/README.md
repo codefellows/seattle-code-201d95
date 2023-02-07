@@ -33,3 +33,7 @@ In this class you will learn how to utilize a 3rd party library so that you can 
 1. What is a CDN?
 
 1. What are some ways we can bring in third party libraries into our projects?
+
+## Resources
+
+- [Replit: Array Includes Method](https://replit.com/@sheyna/UnwelcomeImperfectLaboratory#index.js)
