@@ -44,7 +44,7 @@ section {
 section img {
   width: 460px;
   max-height: 26rem;
-  border: 5dpx solid transparent;
+  border: 5px solid transparent;
 }
 
 section img:hover {
