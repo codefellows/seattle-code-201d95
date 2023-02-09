@@ -32,3 +32,4 @@ function handleClick() {
 }
 
 cta.addEventListener('click', handleClick);
+cta.addEventListener('keypress', handleClick);

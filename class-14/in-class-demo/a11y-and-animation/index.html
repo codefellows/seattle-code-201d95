@@ -35,7 +35,7 @@
     <article>
       <h2>Welcome</h2>
       <p>We have the finest selections of candies and treats online. Our varied confections are top quality and sure to please your sweet tooth. Check out what we have to offer.</p>
-      <img src="img/candy-table-display.jpg">
+      <img src="img/candy-table-display.jpg" alt="table full of candy." width="550" heigh="309">
       <p>Photo by PetitPlat - Stephanie Kilgast</p>
       <aside>
         <h3>Categories</h3>
@@ -53,15 +53,18 @@
       <form>
         <fieldset>
           <legend>Contact Us!</legend>
-          <label>Your Name</label>
+
+          <label for="yourName">Your Name</label>
           <input id="yourName" type="text" name="userName">
-          <label>Comments</label>
+
+          <label for="yourComments">Comments</label>
           <textarea id="yourComments" name="userComment">
+
         </textarea>
         </fieldset>
         <button type="submit">Submit</button>
       </form>
-      <div class="cta">
+      <div tabindex=0 class="cta">
         Random Deal
       </div>
       <section id="results">
